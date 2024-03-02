@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "coelhojs-core": "^1.0.1"
+  },
+  "name": "coelhojs",
+  "version": "1.0.0",
+  "description": "NodeJs Framework base on Express",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCoelho06/coelhojs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "framework",
+    "lapinou.tech"
+  ],
+  "author": "Pierre Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PCoelho06/coelhojs/issues"
+  },
+  "homepage": "https://github.com/PCoelho06/coelhojs#readme"
+}
