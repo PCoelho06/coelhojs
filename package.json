@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "coelhojs-core": "^1.0.1",
+    "coelhojs-cli": "^1.0.0",
+    "coelhojs-core": "^1.0.2",
     "ora": "^8.0.1"
   },
   "name": "coelhojs",
