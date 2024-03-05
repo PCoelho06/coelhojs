@@ -37,6 +37,16 @@ try {
   const gitSpinner = ora("Downloading files...").start();
   // clone the repo into the project folder -> creates the new boilerplate
   await exec(`git clone --depth 1 ${git_repo} ${projectPath} --quiet`);
+  const controllersDir = path.join(process.cwd(), "controllers");
+  const servicesDir = path.join(process.cwd(), "controllers");
+  const middlewaresDir = path.join(process.cwd(), "models");
+  const logsDir = path.join(process.cwd(), "models");
+  const dirs = [controllersDir, servicesDir, middlewaresDir, logsDir];
+  dirs.forEach((dir) => {
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir);
+    }
+  });
   gitSpinner.succeed();
 
   const cleanSpinner = ora("Removing useless files").start();
@@ -61,8 +71,8 @@ try {
   await exec("npm install");
   npmSpinner.succeed();
 
-  console.log("The installation is done!");
-  console.log("You can now run your app with:");
+  console.log("Congratulations, CoelhoJS is now installed!");
+  console.log("You can run your app with:");
   console.log(`    cd ${projectName}`);
   console.log(`    npm run start`);
 } catch (error) {
