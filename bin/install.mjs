@@ -13,7 +13,7 @@ const rm = promisify(fs.rm);
 if (process.argv.length < 3) {
   console.log("You have to provide a name to your app.");
   console.log("For example :");
-  console.log("    npx simple-ts-app my-app");
+  console.log("    npx coelhojs my-app");
   process.exit(1);
 }
 
@@ -21,12 +21,12 @@ const projectName = process.argv[2];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 // TODO: change to your boilerplate repo
-const git_repo = "https://github.com/programonaut/simple-ts-app.git";
+const git_repo = "https://github.com/PCoelho06/coelhojs.git";
 
 // create project directory
 if (fs.existsSync(projectPath)) {
   console.log(
-    `The file ${projectName} already exist in the current directory, please give it another name.`
+    `The folder ${projectName} already exists in the current directory, please give it another name.`
   );
   process.exit(1);
 } else {
@@ -64,7 +64,7 @@ try {
   console.log("The installation is done!");
   console.log("You can now run your app with:");
   console.log(`    cd ${projectName}`);
-  console.log(`    npm run dev`);
+  console.log(`    npm run start`);
 } catch (error) {
   // clean up in case of error, so the user does not have to do it manually
   fs.rmSync(projectPath, { recursive: true, force: true });

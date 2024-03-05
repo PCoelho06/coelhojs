@@ -1,12 +1,15 @@
 {
   "dependencies": {
-    "coelhojs-core": "^1.0.1"
+    "coelhojs-core": "^1.0.1",
+    "ora": "^8.0.1"
   },
   "name": "coelhojs",
   "version": "1.0.0",
   "description": "NodeJs Framework base on Express",
   "main": "index.js",
-  "devDependencies": {},
+  "bin": {
+    "coelhojs": "bin/install.mjs"
+  },
   "scripts": {
     "start": "npx nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

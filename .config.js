@@ -18,13 +18,13 @@ module.exports = {
   },
   db: {
     sequelize: {
-      database: "coelhojs-db",
-      username: "root",
-      password: "password",
+      database: "database-name",
+      username: "username",
+      password: "password", // "" if no password used
       options: {
         host: "localhost",
         dialect: "mysql",
-        logging: false,
+        logging: false, // you can remove this line if you need logs from the database
       },
     },
   },
