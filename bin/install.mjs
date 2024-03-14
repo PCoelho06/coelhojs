@@ -13,7 +13,7 @@ const rm = promisify(fs.rm);
 if (process.argv.length < 3) {
   console.log("You have to provide a name to your app.");
   console.log("For example :");
-  console.log("    npx coelhojs my-app");
+  console.log("    npx create-coelhojs-app my-new-app");
   process.exit(1);
 }
 

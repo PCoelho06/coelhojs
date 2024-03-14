@@ -20,7 +20,7 @@ module.exports = {
     sequelize: {
       database: "database-name",
       username: "username",
-      password: "password", // "" if no password used
+      password: "password",
       options: {
         host: "localhost",
         dialect: "mysql",

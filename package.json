@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "coelhojs-cli": "^1.0.0",
+    "coelhojs-cli": "^1.0.3",
     "coelhojs-core": "^1.0.2",
     "ora": "^8.0.1"
   },
   "name": "coelhojs",
-  "version": "1.0.0",
-  "description": "NodeJs Framework base on Express",
+  "version": "1.0.1",
+  "description": "NodeJs Framework based on Express",
   "main": "index.js",
   "bin": {
-    "coelhojs": "bin/install.mjs"
+    "create-coelhojs-app": "bin/install.mjs"
   },
   "scripts": {
     "start": "npx nodemon index.js",
