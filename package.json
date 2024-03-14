@@ -4,12 +4,12 @@
     "coelhojs-core": "^1.0.2",
     "ora": "^8.0.1"
   },
-  "name": "coelhojs",
-  "version": "1.0.1",
+  "name": "create-coelhojs-app",
+  "version": "1.0.0",
   "description": "NodeJs Framework based on Express",
   "main": "index.js",
   "bin": {
-    "create-coelhojs-app": "bin/install.mjs"
+    "create-coelhojs-app": "./bin/install.mjs"
   },
   "scripts": {
     "start": "npx nodemon index.js",
