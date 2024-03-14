@@ -59,6 +59,7 @@ try {
 
   const npmSpinner = ora("Installing dependencies...").start();
   await exec("npm install");
+  await exec("npm install coelhojs-cli -g");
   npmSpinner.succeed();
 
   const folderSpinner = ora("Creating necessary folders...").start();
