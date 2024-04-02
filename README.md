@@ -17,7 +17,7 @@ Pour créer simplement une API renvoyant les articles d'un blog, vous pouvez uti
 **models/category.model.js**
 
 ```javascript
-const { sequelize, DataTypes } = require("coelhojs");
+const { sequelize, DataTypes } = require("coelhojs-core");
 
 const Category = sequelize.define(
   "Category",
@@ -40,7 +40,7 @@ module.exports = Category;
 **models/article.model.js**
 
 ```javascript
-const { sequelize, DataTypes } = require("coelhojs");
+const { sequelize, DataTypes } = require("coelhojs-core");
 
 const Article = sequelize.define(
   "Article",
@@ -76,7 +76,7 @@ module.exports = Article;
 
 ```javascript
 const { models } = require("coelhojs-core");
-const { Products, Types } = models;
+const { Article, Category } = models;
 
 module.exports = {
   setAssociations: (_) => {
@@ -89,13 +89,13 @@ module.exports = {
 **controllers/article.controller.js**
 
 ```javascript
-const { AbstractController, models } = require("coelhojs");
+const { AbstractController, models } = require("coelhojs-core");
 
 const { Article } = models;
 
 class ArticleController extends AbstractController {
   constructor() {
-    super(Article, ["type"]);
+    super(Article, ["category"]);
   }
 }
 
@@ -105,10 +105,12 @@ module.exports = { ArticleController };
 **routes/api.route.js**
 
 ```javascript
-"/v1/articles": {
+module.exports = {
+  "API /v1/articles": {
     action: "articleController",
     middlewares: [],
   },
+};
 ```
 
 ## Contributions
@@ -116,7 +118,7 @@ module.exports = { ArticleController };
 - GitHub : [https://github.com/PCoelho06/coelhojs](https://github.com/PCoelho06/coelhojs)
 - Mail : p.coelho@lapinou.tech
 
-Pour toute contribution au projet CoelhoJS, n'hésitez pas à soumettre vos suggestions sur GitHub ou à contacter l'équipe de développement par e-mail.
+Pour toute contribution au projet CoelhoJS, n'hésitez pas à soumettre vos suggestions sur GitHub ou à contacter l'équipe de développement par e-mail. Ces voies de communication restent valables pour faire remonter tout problème rencontré avec CoelhoJS.
 
 ## Licence
 

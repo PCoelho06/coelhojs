@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "coelhojs-core": "^1.0.0",
+    "coelhojs-core": "^1.x",
     "ora": "^8.0.1"
   },
   "name": "new-coelhojs-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CoelhoJs Boilerplate",
   "main": "index.js",
   "bin": {
