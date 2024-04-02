@@ -1,8 +1,8 @@
-### CoelhoJS
+# CoelhoJS
 
 CoelhoJS est un framework Node.js conçu pour permettre le développement rapide du back-end d'applications web et d'API.
 
-#### Installation
+## Installation
 
 Pour créer une nouvelle application CoelhoJS, vous pouvez utiliser npx avec la commande suivante :
 
@@ -10,7 +10,7 @@ Pour créer une nouvelle application CoelhoJS, vous pouvez utiliser npx avec la 
 npx new-coelhojs-app nom-du-dossier
 ```
 
-#### Utilisation
+## Utilisation
 
 Pour créer simplement une API renvoyant les articles d'un blog, vous pouvez utiliser les exemples de modèles et de contrôleurs suivants :
 
@@ -97,13 +97,13 @@ module.exports = { ArticleController };
   },
 ```
 
-#### Contributions
+## Contributions
 
 - GitHub : [https://github.com/PCoelho06/coelhojs](https://github.com/PCoelho06/coelhojs)
 - Mail : p.coelho@lapinou.tech
 
 Pour toute contribution au projet CoelhoJS, n'hésitez pas à soumettre vos suggestions sur GitHub ou à contacter l'équipe de développement par e-mail.
 
-#### Licence
+## Licence
 
 CoelhoJS est distribué sous la licence MIT.
