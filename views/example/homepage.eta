@@ -1,0 +1,21 @@
+<% layout('../layout') %>
+
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
+<div class="container">
+  <div class="logo">
+    <img src="/images/logo-coelhojs.svg" alt="">
+  </div>
+  <h1>Welcome to CoelhoJs !</h1>
+  <p>If you're seeing this page, it means that you successfully installed this framework.</p>
+  <p>It is now time to start working on it : 
+    <ul>
+        <li>Start by adding some routes</li>
+        <li>Add some controllers to handle the new routes</li>
+        <li>Add models to play with a database</li>
+    </ul>
+  </p>
+  <p>But more importantly, don't forget to have some fun !</p>
+</div>

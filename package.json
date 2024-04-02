@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "coelhojs-core": "^1.0.0",
+    "ora": "^8.0.1"
+  },
+  "name": "new-coelhojs-app",
+  "version": "1.0.2",
+  "description": "CoelhoJs Boilerplate",
+  "main": "index.js",
+  "bin": {
+    "create-coelhojs-app": "./bin/install.mjs"
+  },
+  "scripts": {
+    "start": "npx nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCoelho06/coelhojs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "framework",
+    "lapinou.tech"
+  ],
+  "author": "Pierre Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PCoelho06/coelhojs/issues"
+  },
+  "homepage": "https://github.com/PCoelho06/coelhojs#readme"
+}
