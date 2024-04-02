@@ -72,6 +72,20 @@ const Article = sequelize.define(
 module.exports = Article;
 ```
 
+**models/associations.js**
+
+```javascript
+const { models } = require("coelhojs-core");
+const { Products, Types } = models;
+
+module.exports = {
+  setAssociations: (_) => {
+    Article.belongsTo(Category, { foreignKey: "categoryId", as: "category" });
+    Category.hasMany(Article, { foreignKey: "categoryId", as: "articles" });
+  },
+};
+```
+
 **controllers/article.controller.js**
 
 ```javascript
