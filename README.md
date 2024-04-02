@@ -10,6 +10,18 @@ Pour créer une nouvelle application CoelhoJS, vous pouvez utiliser npx avec la 
 npx new-coelhojs-app nom-du-dossier
 ```
 
+Vous pouvez ensuite mettre à jour le fichier _.config.js_ afin de vous connecter à votre base de données.
+
+Lancez ensuite la commande
+
+```bash
+npm run start
+```
+
+afin de lancer l'application.
+
+:partying_face: Félicitations, rendez-vous sur [http://localhost:3000](http://localhost:3000)
+
 ## Utilisation
 
 Pour créer simplement une API renvoyant les articles d'un blog, vous pouvez utiliser les exemples de modèles et de contrôleurs suivants :
