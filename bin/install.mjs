@@ -5,6 +5,7 @@ import path from "path";
 import fs, { existsSync, mkdirSync } from "fs";
 // cli spinners
 import ora from "ora";
+const clc = require("cli-color");
 
 // convert libs to promises
 const exec = promisify(cp.exec);
@@ -26,7 +27,11 @@ const git_repo = "https://github.com/PCoelho06/coelhojs.git";
 // create project directory if don't already exists
 if (fs.existsSync(projectPath)) {
   console.log(
-    `The folder ${projectName} already exists in the current directory, please give it another name.`
+    "🚨" +
+      clc.red.bold("Oops :") +
+      clc.red(
+        `The folder ${projectName} already exists in the current directory, please give it another name.`
+      )
   );
   process.exit(1);
 } else {
@@ -59,7 +64,6 @@ try {
 
   const npmSpinner = ora("Installing dependencies...").start();
   await exec("npm install");
-  //await exec("npm install coelhojs-cli -g");
   npmSpinner.succeed();
 
   const folderSpinner = ora("Creating necessary folders...").start();
@@ -75,9 +79,11 @@ try {
   });
   folderSpinner.succeed();
 
-  console.log("Congratulations, CoelhoJS is now installed!");
+  console.log("✅" + clc.green("Congratulations, CoelhoJS is now installed!"));
   console.log(
-    "Don't forget to update the .config.js file with your database credentials."
+    "Don't forget to update the " +
+      clc.bold("./.config.js") +
+      " file with your database credentials."
   );
   console.log("You can then run your app with:");
   console.log(`    cd ${projectName}`);
@@ -85,5 +91,5 @@ try {
 } catch (error) {
   // clean up in case of error, so the user does not have to do it manually
   fs.rmSync(projectPath, { recursive: true, force: true });
-  console.log(error);
+  console.log(clc.red(error));
 }

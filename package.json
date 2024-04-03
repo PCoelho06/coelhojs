@@ -8,7 +8,7 @@
   "description": "CoelhoJs Boilerplate",
   "main": "index.js",
   "bin": {
-    "create-coelhojs-app": "./bin/install.mjs"
+    "new-coelhojs-app": "./bin/install.mjs"
   },
   "scripts": {
     "start": "npx nodemon index.js",
