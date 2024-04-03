@@ -5,7 +5,7 @@ import path from "path";
 import fs, { existsSync, mkdirSync } from "fs";
 // cli spinners
 import ora from "ora";
-const clc = require("cli-color");
+import clc from "cli-color";
 
 // convert libs to promises
 const exec = promisify(cp.exec);
