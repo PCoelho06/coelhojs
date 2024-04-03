@@ -4,6 +4,28 @@ CoelhoJS est un framework Node.js conçu pour permettre le développement rapide
 
 ## Installation
 
+Il existe plusieurs manières de créer une nouvelle application CoelhoJS.
+
+### Avec la CLI CoelhoJS
+
+La CLI (Command-Line Interface) CoelhoJS vous permettra de créer de nouvelles applications mais aussi de vous faciliter la vie tout au long de la phase de programmation de votre projet. Pour plus d'informations sur la CLI CoelhoJS, rendez vous sur le dépôt github : [https://github.com/PCoelho06/coelhojs-cli.git](https://github.com/PCoelho06/coelhojs-cli.git).
+
+Pour installer la CLI :
+
+```bash
+npm i -g coelhojs-cli
+```
+
+Il vous suffira suite de taper la commande suivante :
+
+```bash
+coelhojs new-app nom-du-projet
+```
+
+En remplaçant _nom-du-projet_ par le nom du projet que vous souhaitez créer.
+
+### Sans la CLI
+
 Pour créer une nouvelle application CoelhoJS, vous pouvez utiliser npx avec la commande suivante :
 
 ```bash
